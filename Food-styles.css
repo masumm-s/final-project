@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    min-width: 40px;
+
+}
+html{
+    background: url(not.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right:0;
+    left: 0;
+    z-index: 1;
+    background: white;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+    height: 100px;
+    margin-top: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: 0.1s;
+    background: white;
+    font-family: cursive;
+}
+
+nav ul li a:after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background:  #52B2BF;
+    display: block;
+    transition: 0.5s linear;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a:hover{
+    color:  #52B2BF;
+
+}
+.h1 h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.h1 h1:hover{
+    transform: scale(1.2);
+}
+.h1 h1 span{
+    margin-left: 15px;
+    font-size: 70px; 
+    font-family: mv boli;
+    color: #1D2951;
+}  
+.food{
+    width: 100%;
+}
+.food .dis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.food .food-card .food-image img{
+    width: 300px;
+    transition: 0.5s;
+    border-radius: 30px;
+    border: 8px solid #016064;
+    
+}
+.food .food-card .food-image:hover img{
+    transform: scale(1.1);
+}
+.food .food-card .small-card{
+    float: right;
+    position: relative;
+    top: -20px;
+    left: -1rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+.food .food-card:hover .small-card{
+    top: -280px;
+    opacity: 1;
+}
+.food .food-card .food-info h2{
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 30px;
+    color: #1D2951;
+}
+.food .food-card .food-info p{
+    text-align: center;
+    margin-top: 8px;
+}
+.food .food-card .icon{
+    margin-top: 8px;
+    text-align: center;
+
+}
+.food .food-card .food-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #016064;
+    padding: 8px 10px;
+    margin: 30px;
+}
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background:  #52B2BF;
+}
+footer .footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+footer .footer-main .footer-tag h2{
+    color:  #1F456E;
+}
+footer .footer-main .footer-tag p{
+    font-family: mv boli ;
+    font-weight: bold;
+    
+}

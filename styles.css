@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    min-width: 40px;
+
+}
+html{
+    background: url(https://i.pinimg.com/originals/7a/2e/c7/7a2ec7008f206fa24cec375a03d39db4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right:0;
+    left: 0;
+    z-index: 1;
+    background: white;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+    height: 100px;
+    margin-top: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: 0.1s;
+    background: white;
+    font-family: cursive;
+}
+
+nav ul li a:after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background:  #52B2BF;
+    display: block;
+    transition: 0.5s linear;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a:hover{
+    color:  #52B2BF;
+
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    top: 18rem;
+    width: 800px;
+}
+.main .men-text h1{
+    font-size: 50px;
+    position: relative;
+    left: 40px;
+    color: #0A1172;
+}
+.main .men-text h1 span{
+    color:  #1D2951;
+    font-size: 70px;
+    font-family: mv boli;
+
+    
+}
+.main .men-text h3{
+    font-size: 30px;
+    margin-left: 40px;
+    color: white;
+}
+.main .men-text p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 9px;
+    color:  #1D2951;
+}
+.btn{
+    background: #52B2BF;
+    position: relative;
+    left: 132px;
+    top: 23rem;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+}
+botton{
+    box-shadow: 0 0 5px #52B2BF,0 0 25px #52B2BF;
+}
+botton:hover{
+    box-shadow:  0 0 5px #52B2BF,0 0 25px #52B2BF,0 0 50px #52B2BF,0 0 100px #52B2BF,0 0 200px #52B2BF;
+}
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background:  #52B2BF;
+    margin-top: 700px;
+}
+footer .footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+footer .footer-main .footer-tag h2{
+    color:  #1F456E;
+}
+footer .footer-main .footer-tag p{
+    font-family: mv boli;
+    font-weight: bold;
+    
+}

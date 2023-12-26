@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    min-width: 40px;
+
+}
+html{
+    background: url(not.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right:0;
+    left: 0;
+    z-index: 1;
+    background: white;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+    height: 100px;
+    margin-top: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: 0.1s;
+    background: white;
+    font-family: cursive;
+}
+
+nav ul li a:after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background:  #52B2BF;
+    display: block;
+    transition: 0.5s linear;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a:hover{
+    color:  #52B2BF;
+
+}
+
+.h1 h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.h1 h1 span{
+    margin-left: 15px;
+    font-size: 70px; 
+    font-family: mv boli;
+    color: #1D2951;
+} 
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+.contact .contact-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact .contact-main iframe{
+    width: 700px;
+    height: 650px;
+    border-radius: 40px;
+}
+.contact .contact-main form .input{
+    margin-left: -27rem;
+}
+.contact .contact-main form .input p{
+    line-height: 20px;
+    font-family: mv boli;
+}
+.contact .contact-main form .input input{
+    width: 21rem;
+    height: 4rem;
+    padding: 15px;
+    border: 3px solid  #1F456E;
+    border-radius: 20px;
+    background-color: #63C5DA;
+    color: black;
+}
+.contact .contact-main form .input input:hover{
+    border: 2px solid  #757C88;
+}
+.contact .contact-main form .button{
+    padding: 10px 10px;
+    width: 6rem;
+    background: #63C5DA;
+    color: black;
+    text-decoration: none;
+    border: 3px solid  #1F456E;
+    border-radius: 10px;
+    margin-left: -25rem;
+    margin-top: 20px;
+    text-align: center;
+}
+.contact .contact-main form .button:hover{
+    box-shadow:  0 0 5px  #0039A6,0 0 25px  #0039A6,0 0 50px  #0039A6,0 0 100px  #0039A6,0 0 200px  #0039A6;
+}
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background:  #52B2BF;
+}
+footer .footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+footer .footer-main .footer-tag h2{
+    color:   #2C3E4C;
+}
+footer .footer-main .footer-tag p{
+    font-family: mv boli ;
+    font-weight: bold;
+    
+}

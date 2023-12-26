@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    min-width: 40px;
+
+}
+html{
+    background: url(not.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav .logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right:0;
+    left: 0;
+    z-index: 1;
+    background: white;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+    height: 100px;
+    margin-top: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: 0.1s;
+    background: white;
+    font-family: cursive;
+}
+
+nav ul li a:after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background:  #52B2BF;
+    display: block;
+    transition: 0.5s linear;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a:hover{
+    color:  #52B2BF;
+
+}
+.gallery{
+    width: 100%;
+}
+.gallery h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    transition: 0.2s;
+}
+.gallery h1:hover{
+    transform: scale(1.2);
+}
+.gallery h1 span{
+    color: #1D2951;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.gallery .gallery-image img{
+    margin-top: 5rem;
+    width: 350px; 
+    border-radius: 30px;
+    border: 3px solid #281E5D;
+    transition: 0.5s;
+}
+.gallery .gallery-image img:hover{
+    box-shadow:   0 0 5px  #0039A6,0 0 25px  #0039A6,0 0 50px  #0039A6,0 0 100px  #0039A6,0 0 200px  #0039A6;
+    transform: scale(0.9);
+}
+.gallery .gallery-image h3{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    margin-top: -15rem;
+    font-family: polo;
+    z-index: 5;
+    opacity:0;
+}
+.gallery .gallery-image:hover h3{
+    opacity: 1;
+}
+.gallery .gallery-image:hover{
+    opacity: 0.6;
+    
+}
+.gallery .gallery-image .gallery-btn{
+    position: absolute;
+    margin-top: 15rem;
+    color: white;
+    background: #1F456E;
+    padding: 8px 25px;
+    text-decoration: none;
+    margin-left: -21rem;
+    opacity:0;
+    z-index: 5;
+}
+.gallery .gallery-image:hover .gallery-btn{
+    opacity: 1;
+}
+.gallery .gallery-f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background:  #52B2BF;
+}
+footer .footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+footer .footer-main .footer-tag h2{
+    color:  #1F456E;
+}
+footer .footer-main .footer-tag p{
+    font-family: mv boli ;
+    font-weight: bold;
+    
+}
